@@ -52,7 +52,7 @@ const Home = () => {
     e.preventDefault();
     try {
       console.log(formData);
-      axios.post("http://localhost:8081/submit-form", formData);
+      axios.post("https://emp-task-7.onrender.com/submit-form", formData);
       toast.success("Employee data submitted successfully!");
     } catch (error) {
       console.error("Error:", error);
