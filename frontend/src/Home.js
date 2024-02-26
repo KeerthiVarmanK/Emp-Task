@@ -55,7 +55,7 @@ const Home = () => {
       axios.post("https://emp-task-7.onrender.com/submit-form", formData);
       toast.success("Employee data submitted successfully!");
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error:", error.response.data);
       toast.error("Error occurred while submitting data");
     }
   };
